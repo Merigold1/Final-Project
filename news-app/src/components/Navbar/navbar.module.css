@@ -1,0 +1,53 @@
+
+.navbar {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.linksContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+
+.linksContainer .link {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.linksContainer .activeLink {
+    font-weight: bold;
+    color: #af695c;
+    text-decoration: none;
+}
+
+.searchBarContainer {
+  border-radius: 5px;
+  line-height: 25px;
+  padding: 1px 10px;
+}
+
+.searchBarBtn {
+    background-color: #af695c;
+    color: white;
+    border: 0;
+    margin-left: 10px;
+    border: 2px solid #422800;
+    border-radius: 30px;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 1px 10px;
+    line-height: 23px;
+    text-align: center;
+    touch-action: manipulation;
+    border-radius: 5px;
+}
