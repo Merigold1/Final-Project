@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 50px;
+    height: 60px;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -20,27 +20,42 @@
     font-weight: bold;
     color: white;
     text-decoration: none;
+    transition: text-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.linksContainer .link:hover{
+    text-shadow: 0 0 8px #ffffff, 0 0 10px #ffffff;
 }
 
 .linksContainer .activeLink {
     font-weight: bold;
     color: #af695c;
     text-decoration: none;
+    transition: text-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.linksContainer .activeLink:hover {
+    text-shadow: 0 0 8px #af695c, 0 0 10px #af695c;
 }
 
 .searchBarContainer {
-  border-radius: 5px;
+  border-radius: 10px;
   line-height: 25px;
   padding: 1px 10px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.searchBarContainer:hover {
+    background-color: #fff;
+    box-shadow: 0 0 15px 1px #fff; 
 }
 
 .searchBarBtn {
     background-color: #af695c;
     color: white;
-    border: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-left: 10px;
     border: 2px solid #422800;
-    border-radius: 30px;
     cursor: pointer;
     display: inline-block;
     font-weight: 600;
@@ -49,5 +64,12 @@
     line-height: 23px;
     text-align: center;
     touch-action: manipulation;
-    border-radius: 5px;
+    border-radius: 7px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.searchBarBtn:hover {
+    background-color: #af695c;
+    box-shadow: 0 0 15px 5px rgba(175, 105, 92, 1); 
+    transform: translateY(-1px); 
 }

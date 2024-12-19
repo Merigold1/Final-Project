@@ -59,15 +59,17 @@
     touch-action: manipulation;
     border-radius: 20px;
     padding: 5px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .newsPageButton:hover{
     background-color: #fff;
+    box-shadow: 0 0 15px 1px rgb(255, 255, 255); 
+    transform: translateY(-3px);
 }
 
 
 .saveButton {
-
     background-color: #fbeee0;
     border: 2px solid #422800;
     border-radius: 30px;
@@ -81,16 +83,15 @@
     line-height: 30px;
     text-align: center;
     touch-action: manipulation;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .saveButton:hover {
     background-color: #fff;
+    box-shadow: 0 0 15px 1px rgb(255, 255, 255); 
+    transform: translateY(-3px);
 }
 
-.saveButton:active {
-    box-shadow: #422800 2px 2px 0 0;
-    transform: translate(2px, 2px);
-}
 .unsaveButton {
     background-color: rgba(255, 0, 0, 0.282);
     color: whitesmoke;
@@ -105,6 +106,13 @@
     line-height: 30px;
     text-align: center;
     touch-action: manipulation;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.unsaveButton:hover {
+    background-color: rgba(255, 0, 0, 0.282);
+    box-shadow: 0 0 15px 1px rgb(255, 255, 255); 
+    transform: translateY(-3px);
 }
 
 @media (min-width: 768px) {

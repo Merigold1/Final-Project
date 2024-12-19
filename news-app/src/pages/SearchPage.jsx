@@ -4,13 +4,14 @@ import { fetchNews } from '../store/actions';
 import { useSelector, useDispatch } from "react-redux";
 import { NEWS_REDUCER_CASES } from '../store';
 import { Navbar, NewsCard } from '../components';
-import { NavLink, Navigate } from 'react-router-dom';
+import { NavLink, Navigate, useNavigate} from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 
 function HomePage() {
     const [searchNews, setSearchNews] = useState('')
     const newsReducer = useSelector((state) => state)
     const dispatch = useDispatch()
+    const navigate = useNavigate()
     const { query } = useParams()
 
 
